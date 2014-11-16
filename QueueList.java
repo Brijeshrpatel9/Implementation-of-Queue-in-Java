@@ -4,8 +4,10 @@ public class QueueList {
  
 	    ListItem front;
 	    ListItem back;
+	    int size;
 	    QueueList() {
 	        front = back = null;
+	        size = 0;
 	    }
 	    public void enqueue(Object x) {
 	        if (isEmpty())
@@ -14,7 +16,10 @@ public class QueueList {
 	            back.next = new ListItem(x,null);
 	            back = back.next;
 	        }
+	        size++;
 	        System.out.println("Element " + x + " is inserted at rear.");
+	    	System.out.println();
+
 	    }
 	    public Object dequeue() {
 	        if (isEmpty())
@@ -25,6 +30,9 @@ public class QueueList {
 	           if (front == null)
 	              back = null;
 	           System.out.println("\nElement " + first + " is deleted from front.");
+		       System.out.println();
+
+	           size--;
 	           return first;
 	        }
 	    }
@@ -51,17 +59,29 @@ public class QueueList {
 	    	ql.enqueue(50);
 	    	ql.enqueue(46);
 	    	ql.enqueue(63);
+	    	//ql.toString();
+	    	System.out.print("Size of the Queue: " + ql.size);
+	    	System.out.println();
+	    	
 	    	System.out.println();
 	    	System.out.print("Queue:"+ ql);
 	    	System.out.println();
 	    	ql.dequeue();
-	    	System.out.println();
 	    	System.out.print("Queue:"+ ql);
 	    	System.out.println();
 	    	ql.dequeue();
 	    	//ql.dequeue();
-	    	System.out.println();
 	    	System.out.print("Queue:"+ ql);
+	    	System.out.println();
+	    	System.out.println();
+	    	
+	    	System.out.print("Size of the Queue: " + ql.size);
+	    	
+	    	System.out.println();
+	    	System.out.println();
+	    	
+	    	System.out.print("Is Queue empty?: " + ql.isEmpty());
+	    	
 	    	
 	    	
 	    }

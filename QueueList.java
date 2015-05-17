@@ -38,7 +38,8 @@ public class QueueList
 	           return first;
 	        }
 	    }
-	    public Object peek() {
+	    public Object peek() 
+	    {
 	        if (isEmpty())
 	           return null;
 	        else

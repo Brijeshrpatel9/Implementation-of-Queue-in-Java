@@ -3,14 +3,17 @@ public class QueueList
 	    ListItem front;
 	    ListItem back;
 	    int size;
-	    QueueList() {
+	    QueueList() 
+	    {
 	        front = back = null;
 	        size = 0;
 	    }
-	    public void enqueue(Object x) {
+	    public void enqueue(Object x) 
+	    {
 	        if (isEmpty())
 	           front = back = new ListItem(x,null);
-	        else {
+	        else 
+	        {
 	            back.next = new ListItem(x,null);
 	            back = back.next;
 	        }
@@ -18,10 +21,12 @@ public class QueueList
 	        System.out.println("Element " + x + " is inserted at rear.");
 	    	System.out.println();
 	    }
-	    public Object dequeue() {
+	    public Object dequeue() 
+	    {
 	        if (isEmpty())
 	           return null;
-	        else {
+	        else 
+	        {
 	           Object first = front.item;
 	           front = front.next;
 	           if (front == null)

@@ -1,6 +1,5 @@
 public class QueueList 
 {
-
 	    ListItem front;
 	    ListItem back;
 	    int size;

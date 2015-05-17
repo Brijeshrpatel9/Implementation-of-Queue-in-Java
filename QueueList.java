@@ -17,7 +17,6 @@ public class QueueList
 	        size++;
 	        System.out.println("Element " + x + " is inserted at rear.");
 	    	System.out.println();
-
 	    }
 	    public Object dequeue() {
 	        if (isEmpty())

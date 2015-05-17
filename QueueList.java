@@ -1,7 +1,7 @@
 
-public class QueueList {
+public class QueueList 
+{
 
- 
 	    ListItem front;
 	    ListItem back;
 	    int size;

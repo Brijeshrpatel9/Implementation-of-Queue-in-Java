@@ -49,7 +49,8 @@ public class QueueList
 	    {
 	        return (front == null);
 	    }
-	    public String toString() {
+	    public String toString() 
+	    {
 	        if (isEmpty())
 	           return "empty queue";
 	        else
@@ -85,7 +86,6 @@ public class QueueList
 	    	System.out.println();
 	    	
 	    	System.out.print("Is Queue empty?: " + ql.isEmpty());
-	    	
 	    	
 	    	
 	    }

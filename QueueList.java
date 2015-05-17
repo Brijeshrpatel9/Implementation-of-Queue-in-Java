@@ -45,7 +45,8 @@ public class QueueList
 	        else
 	           return front.item;
 	    }
-	    public boolean isEmpty() {
+	    public boolean isEmpty() 
+	    {
 	        return (front == null);
 	    }
 	    public String toString() {

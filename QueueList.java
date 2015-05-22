@@ -3,11 +3,13 @@ public class QueueList
 	    ListItem front;
 	    ListItem back;
 	    int size;
+	    
 	    QueueList() 
 	    {
 	        front = back = null;
 	        size = 0;
 	    }
+	    
 	    public void enqueue(Object x) 
 	    {
 	        if (isEmpty())
@@ -52,6 +54,7 @@ public class QueueList
 	    {
 	        return (front == null);
 	    }
+	    
 	    public String toString() 
 	    {
 	        if (isEmpty())
@@ -59,6 +62,7 @@ public class QueueList
 	        else
 	           return " " + front;
 	    }
+	    
 	    public static void main(String argv[])
 	    {
 	    	QueueList ql = new QueueList();
@@ -90,7 +94,7 @@ public class QueueList
 	    	
 	    	System.out.print("Is Queue empty?: " + ql.isEmpty());
 	    	
-	    	
+	   	
 	    }
 	}
 

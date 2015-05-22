@@ -94,7 +94,6 @@ public class QueueList
 	    	
 	    	System.out.print("Is Queue empty?: " + ql.isEmpty());
 	    	
-	   	
 	    }
 	}
 

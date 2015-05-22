@@ -21,6 +21,7 @@ public class QueueList
 	        System.out.println("Element " + x + " is inserted at rear.");
 	    	System.out.println();
 	    }
+	    
 	    public Object dequeue() 
 	    {
 	        if (isEmpty())
@@ -38,6 +39,7 @@ public class QueueList
 	           return first;
 	        }
 	    }
+	    
 	    public Object peek() 
 	    {
 	        if (isEmpty())
@@ -45,6 +47,7 @@ public class QueueList
 	        else
 	           return front.item;
 	    }
+	    
 	    public boolean isEmpty() 
 	    {
 	        return (front == null);

@@ -72,6 +72,7 @@ public class QueueList
 	    	ql.enqueue(46);
 	    	ql.enqueue(63);
 	    	//ql.toString();
+	    	
 	    	System.out.print("Size of the Queue: " + ql.size);
 	    	System.out.println();
 	    	
